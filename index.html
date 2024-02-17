@@ -85,24 +85,54 @@
         </section>
 
 
-        <section class="w-11/12 container md:mx-auto mt-4">
-            <h2>Paribahan</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam saepe soluta sit vitae cum dolorem
+        <section class="w-11/12 container md:mx-auto mt-12">
+            <h2 class="font-bold text-center text-2xl">Paribahan</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam saepe soluta sit
+                vitae cum dolorem
                 istet.</p>
 
-            <div class="card card-side bg-base-100 shadow-xl flex flex-row-reverse">
-                <figure class="flex flex-col justify-center items-center">
+            <div class="card card-side bg-base-100 shadow-xl flex flex-col-reverse p-4 lg:flex-row-reverse lg:p-20">
+                <div class="flex flex-col justify-center items-center">
 
-                    <img src="images/fare.png" alt="">
-                    <h3>550</h3>
+                    <img class="w-7 " src="images/fare.png" alt="">
+                    <h3 class="font-bold">550 TAKA</h3>
                     <p>Per Seat</p>
 
-                </figure>
+                </div>
                 <div class="card-body">
-                    <h2 class="card-title">New movie is released!</h2>
-                    <p>Click the button to watch on Jetflix app.</p>
-                    <div class="card-actions justify-end">
-                        <!-- <button class="btn btn-primary">Watch</button> -->
+                    <div class="route-card">
+                        <div class="flex justify-between">
+                            <div class="card-logo flex flex-col lg:flex-row">
+                                <div class="">
+                                    <img class="" src="images/bus-logo.png" alt="">
+                                </div>
+                                <div class="logo-text">
+                                    <h2 class="font-bold">Paribahan</h2>
+                                    <p class="font-light"> Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="btn btn-success bg-green-300 border-none ">
+                                    <img src="images/seat-green.png" alt="">
+                                    <p ><span class=" text-green-900">40 Seats Left</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="first-line flex border-b-2 border-stone-500 border-dashed">
+                            <p>Route</p>
+                            <p>Dhaka-Sylhet</p>
+                        </div>
+                        <div class="second-line flex border-b-2 border-stone-500 border-dashed">
+                            <p>Departure Time</p>
+                            <p>9:00 PM</p>
+                        </div>
+
+                    </div>
+                    <div class="dropping-point flex flex-col lg:flex-row lg:justify-evenly gap-3">
+                        <button class="btn btn-active flex-grow">Boarding Point - Laxmipur</button>
+                        <button class="btn btn-active flex-grow">Dropping Point - Bogura</button>
+                        <button class="btn btn-active flex-grow">Est. Time - 11 Hour</button>
                     </div>
                 </div>
             </div>
