@@ -9,24 +9,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="container md:mx-auto">
+<body class="container md:mx-auto ">
     <header class="w-11/12 container md:mx-auto">
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-
-                    </div>
-                    <a class="btn btn-ghost text-4xl font-extrabold">Hero Paribahan</a>
+        <nav class="w-11/12 container md:mx-auto">
+            <div class="navbar bg-base-100  flex flex-col lg:flex-row">
+                <div class="navbar-start sm:mx-auto">
+                    <a class="btn btn-ghost text-4xl font-extrabold ">Paribahan</a>
                 </div>
-
                 <div class="navbar-end">
                     <a class="btn bg-[#1DD1004F] border-4-[#1DD100]"> <span class="text-[#1DD100] ">Bus</span>
                         <img src="images/bus-icon.png" alt="">
@@ -35,29 +24,32 @@
             </div>
         </nav>
     </header>
-    <main class="w-11/12 container md:mx-auto">
-
-        <div class="banner-img text-center">
-            <img class="w-11/12 lg:absolute" src="images/banner.png" alt="">
-            <div class="banner-text lg:relative">
-                <h1 class="font-extrabold text-6xl text-white">End-to-End Travel with</h1>
-                <h1 class="font-extrabold text-6xl text-[#1DD100]">Hero Paribahan</h1>
-                <p class="text-white">Yes, you can run unit tests and view the results directly within the app. The
-                    integrated testing
-                    features allow for a streamlined</p>
-                <button class="btn bg-[#1DD100] border-none">Buy Tickets</button>
-            </div>
-        </div>
-
+    <main class="w-11/12 container md:mx-auto m-10">
         <section class="">
-            <h2 class="font-extrabold">Best Offers For You</h2>
-            <div class="h-12 border-pink-200"></div>
+            <div class="banner-img text-center">
+                <img class="w-11/12 h-60 lg:h-full relative  md:mx-auto" src="images/banner.png" alt="">
+                <div class="banner-text absolute top-48 left-[5%] w-11/12 lg:w-full lg:top-1/2 lg:left-[18%]">
+                    <h1 class="font-extrabold lg:text-6xl text-white mb-1 ">End-to-End Travel with</h1>
+                    <h1 class="font-extrabold lg:text-6xl text-[#1DD100] mb-1">Hero Paribahan</h1>
+                    <p class="text-white sm:text-sm mb-1">Yes, you can run unit tests and view the results
+                        directly
+                        within the app.
+                        The
+                        integrated testing
+                        features allow for a streamlined</p>
+                    <button class="btn bg-[#1DD100] border-none">Buy Tickets</button>
+                </div>
+            </div>
+        </section>
+
+
+
         </section>
 
 
 
     </main>
-    
+
 
 </body>
 
