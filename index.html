@@ -164,14 +164,14 @@
                     <div class="flex">
 
                         <div class="grid grid-cols-4 gap-6 mt-5 grow">
-                            <button id="A1" class="btn btn-sm">A1</button>
-                            <button id="A2" class="btn btn-sm">A2</button>
-                            <button id="A3" class="btn btn-sm">A3</button>
-                            <button id="A4" class="btn btn-sm">A4</button>
-                            <button id="B1" class="btn btn-sm">B1</button>
-                            <button id="B2" class="btn btn-sm">B2</button>
-                            <button id="B3" class="btn btn-sm">B3</button>
-                            <button id="B4" class="btn btn-sm">B4</button>
+                            <button onclick="nowclick('A1','seat-btn')" id="A1" class="btn seat-btn btn-sm">A1</button>
+                            <button onclick="nowclick('A2','seat-btn')" id="A2" class="btn seat-btn btn-sm">A2</button>
+                            <button onclick="nowclick('A3','seat-btn')" id="A3" class="btn seat-btn btn-sm">A3</button>
+                            <button onclick="nowclick('A4','seat-btn')" id="A4" class="btn seat-btn btn-sm">A4</button>
+                            <button onclick="nowclick('B1','seat-btn')" id="B1" class="btn seat-btn btn-sm">B1</button>
+                            <button onclick="nowclick('B2','seat-btn')" id="B2" class="btn seat-btn btn-sm">B2</button>
+                            <button onclick="nowclick('B3','seat-btn')" id="B3" class="btn seat-btn btn-sm">B3</button>
+                            <button onclick="nowclick('B4','seat-btn')" id="B4" class="btn seat-btn btn-sm">B4</button>
 
 
                         </div>
@@ -180,7 +180,7 @@
                 <div class="">
                     <div class="bg-[#F7F8F8] p-6 rounded-lg">
                         <div class="flex justify-between border-b-2 border-stone-500 border-dashed mb-4 font-bold">
-                            <p>Seat <span class="bg-[#1DD100] rounded-lg w-6">0</span> </p>
+                            <p>Seat <span id="seatCount" class="bg-[#1DD100] rounded-lg w-6">0</span> </p>
                             <p>Class</p>
                             <p>Price</p>
 
