@@ -195,7 +195,7 @@
                             <p>Total Price</p>
                             <p>BDT <span id="totalAmount">00</span> </p>
                         </div>
-                        <div id="join" class="join grow-0">
+                        <div id="join" class="join">
                             <div>
                                 <div>
                                     <input value="NEW15" id="inputCoupon" class="input input-bordered join-item"
@@ -230,7 +230,7 @@
 
                         <input type="text" class="grow" placeholder="Enter your email id" />
                     </label>
-                    <button class="btn w-full">Button</button>
+                    <button class="bg-[#1DD100] text-white btn w-full" onclick="my_modal_5.showModal()">Next</button>
 
                     <div class="flex justify-between mb-4">
                         <p class="underline">Terms & condition</p>
@@ -241,7 +241,28 @@
 
 
         </section>
+        <!-- Open the modal using ID.showModal() method -->
 
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box flex flex-col">
+                <div class="flex flex-col justify-center items-center">
+                    <img class="w-20" src="images/success.png" alt="">
+                    <h2 class="text-2xl font-bold text-[#1DD100]">Success</h2>
+
+                    <p class="text-center"><span class="font-bold text-center">Thank you for Booking Our Bus Seats.
+                            We are working hard to find the best service and deals for you.</span>
+                        <br>
+                        Shortly you will find a confirmation in your email.
+                    </p>
+                </div>
+                <div class="modal-action">
+                    <form method="dialog">
+
+                        <button class=" btn btn-success text-white bg-[#1DD100]">Continue</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
 
 
     </main>
