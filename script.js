@@ -1,4 +1,5 @@
 // Booked seat count
+
 let selectedSeatCount = 0;
 let availableSeatCount = 8;
 let totalPrice;
@@ -12,12 +13,18 @@ function nowclick(id, className) {
   selectedSeatCount++;
   availableSeatCount--;
   const disableBtn = document.getElementsByClassName(className);
+  const btnId = document.getElementById(id);
+
+  if (btnId) {
+    btnId.disabled = true;
+  }
 
   if (selectedSeatCount === 4) {
     for (let btn of disableBtn) {
       btn.disabled = true;
     }
   }
+
   const setSeatCount = document.getElementById("availableSeat");
   console.log(availableSeatCount);
   setSeatCount.innerText = availableSeatCount;
@@ -38,5 +45,33 @@ function apply() {
     grand.innerText = grandTotal;
     const join = document.getElementById("join");
     join.classList.add("hidden");
+  } else if (getinput.value === "Couple 20") {
+    grandTotal = totalPrice - totalPrice * (20 / 100);
+    console.log(typeof grandTotal);
+    const grand = document.getElementById("grandTotal");
+    grand.innerText = grandTotal;
+    const join = document.getElementById("join");
+    join.classList.add("hidden");
+  } else {
+    const errorModal = document.getElementById("my_modal_6");
+    errorModal.showModal();
   }
+}
+
+// JavaScript code
+function addSeatList(idSeat) {
+  // Create a new list container
+  var newListContainer = document.createElement("div");
+  newListContainer.className =
+    "flex justify-between mb-4 font-light";
+
+  // Add content to the new list container
+  newListContainer.innerHTML = `
+      <p>${idSeat}</p>
+      <p>Economy</p>
+      <p>550</p>
+  `;
+
+  // Append the new list container to the seatDetail div
+  document.querySelector(".seatDetail").appendChild(newListContainer);
 }

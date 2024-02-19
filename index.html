@@ -164,14 +164,22 @@
                     <div class="flex">
 
                         <div class="grid grid-cols-4 gap-6 mt-5 grow">
-                            <button onclick="nowclick('A1','seat-btn')" id="A1" class="btn seat-btn btn-sm">A1</button>
-                            <button onclick="nowclick('A2','seat-btn')" id="A2" class="btn seat-btn btn-sm">A2</button>
-                            <button onclick="nowclick('A3','seat-btn')" id="A3" class="btn seat-btn btn-sm">A3</button>
-                            <button onclick="nowclick('A4','seat-btn')" id="A4" class="btn seat-btn btn-sm">A4</button>
-                            <button onclick="nowclick('B1','seat-btn')" id="B1" class="btn seat-btn btn-sm">B1</button>
-                            <button onclick="nowclick('B2','seat-btn')" id="B2" class="btn seat-btn btn-sm">B2</button>
-                            <button onclick="nowclick('B3','seat-btn')" id="B3" class="btn seat-btn btn-sm">B3</button>
-                            <button onclick="nowclick('B4','seat-btn')" id="B4" class="btn seat-btn btn-sm">B4</button>
+                            <button onclick="nowclick('A1','seat-btn'); addSeatList('A1');" id="A1"
+                                class="btn seat-btn btn-sm">A1</button>
+                            <button onclick="nowclick('A2','seat-btn'); addSeatList('A2');" id="A2"
+                                class="btn seat-btn btn-sm">A2</button>
+                            <button onclick="nowclick('A3','seat-btn'); addSeatList('A3');" id="A3"
+                                class="btn seat-btn btn-sm">A3</button>
+                            <button onclick="nowclick('A4','seat-btn'); addSeatList('A4');" id="A4"
+                                class="btn seat-btn btn-sm">A4</button>
+                            <button onclick="nowclick('B1','seat-btn'); addSeatList('B1');" id="B1"
+                                class="btn seat-btn btn-sm">B1</button>
+                            <button onclick="nowclick('B2','seat-btn'); addSeatList('B2');" id="B2"
+                                class="btn seat-btn btn-sm">B2</button>
+                            <button onclick="nowclick('B3','seat-btn'); addSeatList('B3');" id="B3"
+                                class="btn seat-btn btn-sm">B3</button>
+                            <button onclick="nowclick('B4','seat-btn'); addSeatList('B4');" id="B4"
+                                class="btn seat-btn btn-sm">B4</button>
 
 
                         </div>
@@ -185,11 +193,14 @@
                             <p>Price</p>
 
                         </div>
-                        <div id="list-container"
+                        <div class="seatDetail">
+
+                            <!-- <div id="list-container"
                             class="flex justify-between border-b-2 border-stone-500 mb-4 font-light">
                             <p>C2</p>
                             <p>Economy</p>
                             <p>550</p>
+                        </div> -->
                         </div>
                         <div class="flex justify-between border-b-2 border-stone-500 font-bold mb-4">
                             <p>Total Price</p>
@@ -210,7 +221,7 @@
                         </div>
                         <div class="flex justify-between mb-4 font-bold ">
                             <p>Grand Total</p>
-                            <p>BDT <span id="grandTotal">1100</span></p>
+                            <p>BDT <span id="grandTotal">00</span></p>
                         </div>
                     </div>
                     <label class="font-bold" for="">Passenger Name*</label>
@@ -263,10 +274,26 @@
                 </div>
             </div>
         </dialog>
+        <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box flex flex-col">
+                <div class="flex flex-col justify-center items-center">
+
+                    <p class="text-center"><span class="font-bold text-center">ERROR COUPON</p>
+                </div>
+                <div class="modal-action">
+                    <form method="dialog">
+
+                        <button class=" btn text-white bg-red-600">Continue</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
 
 
     </main>
-
+    <!-- <script>
+        
+    </script> -->
     <script src="script.js"></script>
 </body>
 
