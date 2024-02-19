@@ -1,4 +1,3 @@
-// Booked seat count
 
 let selectedSeatCount = 0;
 let availableSeatCount = 8;
@@ -58,20 +57,15 @@ function apply() {
   }
 }
 
-// JavaScript code
 function addSeatList(idSeat) {
-  // Create a new list container
   var newListContainer = document.createElement("div");
-  newListContainer.className =
-    "flex justify-between mb-4 font-light";
+  newListContainer.className = "flex justify-between mb-4 font-light";
 
-  // Add content to the new list container
   newListContainer.innerHTML = `
       <p>${idSeat}</p>
       <p>Economy</p>
       <p>550</p>
   `;
 
-  // Append the new list container to the seatDetail div
   document.querySelector(".seatDetail").appendChild(newListContainer);
 }
